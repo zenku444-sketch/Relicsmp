@@ -1,0 +1,2 @@
+# Relicsmp
+Relic smp
