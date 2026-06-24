@@ -1,0 +1,57 @@
+name: RelicSMPCore
+version: 1.0.0
+description: A professional SMP plugin centered around Relics, World Events, Progression, and Administration
+authors: [ zenku444 ]
+main: com.relicsmpcore.RelicSMPCore
+api-version: '1.21'
+
+commands:
+  relicsmpcore:
+    description: Open the RelicSMPCore main menu
+    usage: /relicsmpcore
+    aliases: [ rsc, relicsmp ]
+    permission: relicsmpcore.command.main
+
+permissions:
+  relicsmpcore.*:
+    description: Grant all RelicSMPCore permissions
+    default: op
+    children:
+      relicsmpcore.command.main: true
+      relicsmpcore.command.reload: true
+      relicsmpcore.admin: true
+      relicsmpcore.relic.*: true
+      relicsmpcore.event.*: true
+  relicsmpcore.command.main:
+    description: Use /relicsmpcore command
+    default: true
+  relicsmpcore.command.reload:
+    description: Reload plugin configuration
+    default: op
+  relicsmpcore.admin:
+    description: Administrative access
+    default: op
+  relicsmpcore.relic.*:
+    description: All relic permissions
+    default: op
+    children:
+      relicsmpcore.relic.use: true
+      relicsmpcore.relic.give: true
+  relicsmpcore.relic.use:
+    description: Use relics
+    default: true
+  relicsmpcore.relic.give:
+    description: Give relics to players
+    default: op
+  relicsmpcore.event.*:
+    description: All event permissions
+    default: op
+    children:
+      relicsmpcore.event.view: true
+      relicsmpcore.event.manage: true
+  relicsmpcore.event.view:
+    description: View events
+    default: true
+  relicsmpcore.event.manage:
+    description: Manage events
+    default: op

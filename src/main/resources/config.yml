@@ -1,0 +1,44 @@
+# RelicSMPCore Configuration
+
+plugin:
+  name: RelicSMPCore
+  version: 1.0.0
+  author: zenku444
+
+settings:
+  # Auto-save interval in seconds
+  auto-save-interval: 300
+  # Enable debug mode for additional logging
+  debug-mode: false
+  # Enable/disable relics system
+  relics-enabled: true
+  # Enable/disable events system
+  events-enabled: true
+  # Enable/disable player tracking
+  player-tracking-enabled: true
+
+relics:
+  # Default cooldown values (in seconds)
+  default-cooldown: 30
+  # Max relics per player
+  max-relics-per-player: 5
+  # Auto drop relic on death
+  drop-on-death: true
+  # Drop chance percentage
+  drop-chance: 100
+
+events:
+  # Auto start scheduled events
+  auto-start-events: false
+  # Announce events to all players
+  announce-events: true
+  # Broadcast interval (in ticks)
+  broadcast-interval: 100
+
+players:
+  # Track player statistics
+  track-statistics: true
+  # Save interval (in seconds)
+  save-interval: 300
+  # Keep offline player data
+  keep-offline-data: true

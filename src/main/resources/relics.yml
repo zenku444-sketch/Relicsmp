@@ -1,0 +1,34 @@
+# Relics Configuration - Auto-generated on first run
+
+relics:
+  relic_of_winds:
+    name: Relic of Winds
+    description: Grants the power of flight
+    material: FEATHER
+    cooldown: 30
+
+  relic_of_ender:
+    name: Relic of Ender
+    description: Enables teleportation across distances
+    material: ENDER_PEARL
+    cooldown: 45
+
+  relic_of_titan:
+    name: Relic of Titan
+    description: Increases strength and durability
+    material: IRON_BLOCK
+    cooldown: 60
+
+  relic_of_hunter:
+    name: Relic of Hunter
+    description: Enhances tracking and precision
+    material: BOW
+    cooldown: 40
+
+  relic_of_fortune:
+    name: Relic of Fortune
+    description: Increases luck and rare drops
+    material: GOLD_BLOCK
+    cooldown: 50
+
+player-relics: {}
